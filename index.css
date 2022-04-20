@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lobster&display=swap');
+body{
+    min-height: 100vh;
+   
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+footer{
+    width: 100%;
+}
+.bgc{
+    /* width: 100vh; */
+    height: 30px;
+    background-color: #42C2FF;
+}
+
+    
+
+.main-footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(29, 28, 28);
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.social-media{
+
+    position: fixed;
+    word-spacing: 10px;
+   
+}
+.social-media i{
+   color: black;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 6px;
+    background-color: #85F4FF;
+   
+    
+}
+.all-tag{
+    margin-top: 30px;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 60px;
+}
+ul li {
+    list-style: none;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', cursive;
+}
+ul li a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    transition: all 0.5ms linear;
+}
+ul li a:hover:before{
+    width: 50px;
+    background-color: #B8FFF9;
+}
+a:hover{
+    color: #B8FFF9;
+}
+i:hover{
+    border-color: rgb(206, 0, 252);
+}
+    
+
+    
+
+
+
+/* Phone-View  */
+@media (max-width: 572px) {
+
+    ul{
+        gap: 20px;
+    }
+    .all-tag{
+        margin-left: -30px;
+    }
+ 
+}
